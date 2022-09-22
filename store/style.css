@@ -355,3 +355,11 @@ footer {
         padding-left: 0px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    img {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
