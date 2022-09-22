@@ -10,9 +10,21 @@ img {
     min-width: 250px;
 }
 
-body {
-    background: rgb(29, 29, 29);
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
+
+/* body {
+    background: rgb(29, 29, 29);
+} */
 
 h1 {
     font-family: 'Secular One';
@@ -69,7 +81,9 @@ a {
 .navbar {
     position: absolute;
     overflow: hidden;
-    background-color: rgb(17, 16, 16);
+    background: rgb(29, 29, 29);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     position: fixed;
     width: 100%;
     padding: 25px 0;
@@ -154,13 +168,12 @@ a {
 
 .game {
     position: relative;
-    top: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
     border-radius: 20px;
-    /* background: rgb(41, 41, 41); */
+    background: rgb(29, 29, 29);
 }
 
 .game p {
@@ -168,7 +181,10 @@ a {
 }
 
 .jeu {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     padding: 20px;
     border-radius: 20px;
     background: rgb(49, 49, 49);
@@ -202,7 +218,7 @@ a {
     max-width: 150px;
     background: rgb(9, 163, 9);
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     margin-top: 25px;
     margin-left: 25px;
@@ -213,7 +229,15 @@ a {
     text-decoration: none;
     color: white;
     font-family: 'Secular One';
+    font-size: 1.5em;
 }
+
+footer {
+    margin-top: 100px;
+    height: 100px;
+    width: 100%;
+}
+
 
 /***********************************************/
 
@@ -314,6 +338,16 @@ a {
         margin-right: auto;
         margin-top: 20px;
     }
+
+    .game {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .jeu {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 458px) {
@@ -329,6 +363,6 @@ a {
 
     .bloc2 p {
         font-size: 0.8em;
-        padding-left: 22px;
+        padding-left: 0px;
     }
 }
