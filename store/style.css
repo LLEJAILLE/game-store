@@ -303,7 +303,7 @@ footer {
 /*-----------------------------------------*/
 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 865px) {
     .bloc1 {
         display: block;
         text-align: center;
