@@ -10,21 +10,9 @@ img {
     min-width: 250px;
 }
 
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-/* body {
+body {
     background: rgb(29, 29, 29);
-} */
+}
 
 h1 {
     font-family: 'Secular One';
@@ -168,7 +156,7 @@ a {
 
 .game {
     position: relative;
-    top: 200px;
+    top: 100px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
