@@ -160,7 +160,7 @@ a {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 20px;
-    background: rgb(41, 41, 41);
+    /* background: rgb(41, 41, 41); */
 }
 
 .game p {
@@ -173,15 +173,6 @@ a {
     border-radius: 20px;
     background: rgb(49, 49, 49);
 }
-
-
-/* .bloc1 {
-    display: table-cell;
-    height: 200px;
-    padding-left: 20px;
-    vertical-align: middle;
-} */
-
 
 .bloc1 {
     display: flex;
