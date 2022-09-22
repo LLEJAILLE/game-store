@@ -84,7 +84,7 @@ header a {
 
 .acceuil p {
     font-family: 'Secular One';
-    color: white;
+    color: rgb(199, 196, 196);
     padding: 10px;
     padding-left: 20px;
 }
@@ -97,6 +97,7 @@ img {
     margin-right: 100px;
     height: 30%;
     width: 30%;
+    animation: move 1s ease-in-out;
 }
 
 .go-store {
@@ -116,6 +117,19 @@ img {
     font-family: 'Secular One';
 }
 
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 @media screen and (max-width: 568px){
     header {
         margin-left: 20px;
@@ -128,9 +142,8 @@ img {
         visibility: hidden;
     }
     header h1 {
+        margin: 0;
         text-align: center;
-        margin-right: 25px;
-        margin-bottom: 20px;
     }
     header h3 {
         float: none;
@@ -160,9 +173,15 @@ img {
         margin-right: 50px
     }
     header h1 {
-        font-size: 1.4em;
-        margin-right: 25px;
+        margin: 0;
+        font-size: 1.6em;
         margin-bottom: 20px;
+    }
+    header h3 {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1em;
     }
     button {
         color: rgba(255, 255, 255, 0.568);
