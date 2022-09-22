@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    background: rgb(29, 29, 29);
+    padding: 20px;
+}
+
+header h3 {
+    font-family: 'Secular One';
+    color: white;
+    float: right;
+    margin-top: -37px;
+    margin-right: 80px;
+}
+
+button {    
+    border: none; 
+    cursor: pointer;
+    background: rgb(29, 29, 29);
+    color: white;
+    font-family: 'Secular One';
+    font-size: 1em;
+}
+
+
+header h1 {
+    font-family: 'Secular One';
+    color: white;
+    margin-left: 40px;
+}
+
+header a {
+    float: right;
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+    margin-top: -35px;
+    transform: scale(1.2);
+}
+
+.acceuil {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(29, 29, 29);
+    z-index: 100;
+}
+
+.acceuil h1 {
+    font-family: 'Secular One';
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1.4em;
+}
+
+.acceuil p {
+    font-family: 'Secular One';
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+img {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    margin-left: auto;
+    margin-right: 100px;
+    height: 30%;
+    width: 30%;
+}
+
+.go-store {
+    max-width: 150px;
+    background: rgb(9, 163, 9);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.go-store a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Secular One';
+}
+
+@media screen and (max-width: 568px){
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    header a {
+        visibility: hidden;
+    }
+    header h1 {
+        text-align: center;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+    header h3 {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+    button {
+        color: rgba(255, 255, 255, 0.568);
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+    }
+    .go-store {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 387px){
+    header {
+        margin-left: 50px;
+        margin-right: 50px
+    }
+    header h1 {
+        font-size: 1.4em;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+    button {
+        color: rgba(255, 255, 255, 0.568);
+    }
+}
