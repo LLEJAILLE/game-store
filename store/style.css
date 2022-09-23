@@ -222,6 +222,7 @@ a {
     padding-left: 22px;
     font-size: 1.2em;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .bloc2 p {
@@ -242,6 +243,7 @@ a {
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .buy a {
@@ -249,25 +251,8 @@ a {
     color: white;
     font-family: 'Secular One';
     font-size: 1.5em;
-
-}
-.back {
-    max-width: 150px;
-    background: rgb(9, 163, 9);
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
 }
 
-.back a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Secular One';
-    font-size: 1em;
-}
 
 footer {
     margin-top: 20px;
