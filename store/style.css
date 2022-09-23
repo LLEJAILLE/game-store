@@ -66,6 +66,19 @@ a {
     padding: 0 30px;
 }
 
+#background-video {
+    opacity: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .navbar {
     position: absolute;
     overflow: hidden;
@@ -77,6 +90,7 @@ a {
     padding: 25px 0;
     transition: all 0.3s ease;
     z-index: 10000;
+    top: 0;
 }
 
 .navbar.sticky {
@@ -201,6 +215,8 @@ a {
     color: #fff;
     font-size: 12px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 
