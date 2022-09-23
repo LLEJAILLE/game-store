@@ -154,21 +154,7 @@ a {
     top: 20px;
 }
 
-.game {
-    position: relative;
-    top: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background: rgb(29, 29, 29);
-}
-
-.game p {
-    color: white;
-}
-
-.jeu {
+.box {
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -176,6 +162,51 @@ a {
     padding: 20px;
     border-radius: 20px;
     background: rgb(49, 49, 49);
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#buttons {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.btn {
+    position: relative;
+    top: 120px;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border-radius: 20px;
+    background: rgb(48, 48, 48);
+    color: white;
+    font-family: 'Secular One';
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(83, 83, 83);
+    transition: 0.5s;
+}
+
+.cat {
+    position: relative;
+    top: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.objects {
+    margin-top: 130px;
+    margin-bottom: 0;
 }
 
 .bloc1 {
@@ -208,7 +239,6 @@ a {
     background: rgb(9, 163, 9);
     border-radius: 20px;
     padding: 10px;
-    text-align: center;
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 10px;
@@ -219,12 +249,28 @@ a {
     color: white;
     font-family: 'Secular One';
     font-size: 1.5em;
+
+}
+.back {
+    max-width: 150px;
+    background: rgb(9, 163, 9);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Secular One';
+    font-size: 1em;
 }
 
 footer {
-    margin-top: 100px;
-    height: 100px;
-    width: 100%;
+    margin-top: 20px;
 }
 
 
@@ -252,15 +298,15 @@ footer {
     body.disabled {
         overflow: hidden;
     }
-
+    
     .icon {
         display: block;
     }
-
+    
     .icon.hide {
         display: none;
     }
-
+    
     .navbar .menu-list {
         position: fixed;
         height: 100vh;
@@ -274,21 +320,21 @@ footer {
         background: #222;
         transition: all 0.3s ease;
     }
-
+    
     .navbar.show .menu-list {
         left: 0%;
     }
-
+    
     .navbar .menu-list li {
         margin-top: 45px;
     }
-
+    
     .navbar .menu-list li a {
         font-size: 23px;
         margin-left: -100%;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-
+    
     .navbar.show .menu-list li a {
         margin-left: 0px;
     }
@@ -308,7 +354,7 @@ footer {
         display: block;
         text-align: center;
     }
-
+    
     img {
         margin-left: 20px;
         margin-bottom: 20px;
@@ -317,22 +363,22 @@ footer {
         max-width: 150px;
         min-width: 150px;
     }
-
+    
     .bloc2 {
         text-align: center;
     }
-
+    
     .buy {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
-
+    
     .game {
         margin-left: 20px;
         margin-right: 20px;
     }
-
+    
     .jeu {
         margin-left: 20px;
         margin-right: 20px;
@@ -344,7 +390,7 @@ footer {
         font-size: 1.5em;
         padding-left: 0px;
     }
-
+    
     .bloc2 h2 {
         font-size: 1em;
         padding-left: 0px;
@@ -361,5 +407,19 @@ footer {
         margin-left: 0px;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 627px) {
+    .btn {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .btn {
+        font-size: 0.7em;
+        padding: 6px 15px;
     }
 }

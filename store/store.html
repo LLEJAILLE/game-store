@@ -21,7 +21,6 @@
                     <i class="fas fa-times"></i>
                 </div>
                 <li id="logo"><a href="../index.html">Acceuil</a></li>
-                <li class="c"><a href="#">catégories</a></li>
                 <li class="c"><a href="#">Les plus joué</a></li>
                 <li><a href="#">Panier</a></li>
                 <li><a href="#">Se connecter</a></li>
@@ -32,22 +31,22 @@
         </div>
     </nav>
 
+    <div class="cat">
+        <h1>Catégories</h1>
+    </div>
 
+    
+    
+    <div id="buttons">
+        <button class="btn" onclick="filterObjects('all')">show all</button>
+        <button class="btn" onclick="filterObjects('Aventure')">Aventure</button>
+        <button class="btn" onclick="filterObjects('Voiture')">Voiture</button>
+        <button class="btn" onclick="filterObjects('Guerre')">Guerre</button>
+        <button class="btn" onclick="filterObjects('Multi-joueurs')">Multi-joueurs</button>
+    </div>
 
-    <!-- <header>
-        <ul>
-            <li id="logo"><a href="../index.html">Game store</a></li>
-            <li><a href="#">Se connecter</a></li>
-            <li><a href="#">Panier</a></li>
-            <li class="list"><a href="#">Ma liste</a></li>
-            <li class="c"><a href="#">cathégories</a></li>
-            <li class="c"><a href="#">Les plus joué</a></li>
-            <li class="c"><a href="#">Promotions</a></li>
-        </ul>
-    </header> -->
-
-    <div class="game">
-        <div class="jeu">
+    <div class="objects">
+        <div class="box Aventure Multi-joueurs">
             <div class="bloc1">
                 <img src="../media/cyberpunk.jpg" alt="cyberpunk2077">
                 <div class="bloc2">
@@ -64,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="jeu">
+        <div class="box Aventure Multi-joueurs">
             <div class="bloc1">
                 <img src="../media/ark.jpg" alt="ARK">
                 <div class="bloc2">
@@ -81,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="jeu">
+        <div class="box Guerre Multi-joueurs">
             <div class="bloc1">
                 <img src="../media/COD V.jpg" alt="ARK">
                 <div class="bloc2">
@@ -98,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="jeu">
+        <div class="box Multi-joueurs Voiture Guerre">
             <div class="bloc1">
                 <img src="../media/GTA.jpg" alt="ARK">
                 <div class="bloc2">
@@ -115,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="jeu">
+        <div class="box Multi-joueurs">
             <div class="bloc1">
                 <img src="../media/over.jpg" alt="ARK">
                 <div class="bloc2">
@@ -132,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="jeu">
+        <div class="box Voiture Multi-joueurs">
             <div class="bloc1">
                 <img src="../media/RLjpg.jpg" alt="ARK">
                 <div class="bloc2">
@@ -149,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <div class="jeu">
+        <div class="box Aventure Guerre">
             <div class="bloc1">
                 <img src="../media/val.jpg" alt="ARK">
                 <div class="bloc2">
@@ -167,6 +166,9 @@
             </div>
         </div>
     </div>
+
+    <script src="../js/filter.js"></script>
+
     <script>
         const body = document.querySelector("body");
         const navbar = document.querySelector(".navbar");
@@ -188,7 +190,6 @@
     </script>
 
     <footer></footer>
-
 </body>
 
 </html>
