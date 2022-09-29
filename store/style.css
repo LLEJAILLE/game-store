@@ -169,14 +169,14 @@ a {
 }
 
 .box {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
     padding: 20px;
     border-radius: 20px;
     background: rgb(49, 49, 49);
     display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-left: -500px;
 }
 
 .show {
@@ -277,7 +277,15 @@ footer {
 
 /***********************************************/
 
-@media (max-width: 1230px) {
+@media (max-width: 1300px) {
+
+    .box {
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
     .content {
         padding: 0 60px;
     }
@@ -351,6 +359,14 @@ footer {
 
 
 @media screen and (max-width: 865px) {
+
+    .box {
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
     .bloc1 {
         display: block;
         text-align: center;
